@@ -23,6 +23,5 @@ A clean, responsive image gallery application with hover effects, built with HTM
   - CSS transitions and animations
 - **JavaScript**: For interactive filtering functionality
 - **Font Awesome**: For icons
-- **Google Fonts**: Using Inter font family
 - **Unsplash**: For high-quality images
 
