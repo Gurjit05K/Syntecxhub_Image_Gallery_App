@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Minimal Gallery</h1>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Images</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="architecture">Architecture</button>
+                <button class="filter-btn" data-filter="abstract">Abstract</button>
+            </div>
+        </header>
+        
+        <main class="gallery">
+            <!-- Image 1 -->
+            <div class="gallery-item" data-category="nature">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Mountain Landscape">
+                    <div class="image-overlay">
+                        <div class="image-caption">
+                            <h3>Mountain Landscape</h3>
+                            <p>Serene mountain view with misty valleys and morning light.</p>
+                        </div>
+                        <div class="image-icons">
+                            <span><i class="fas fa-mountain"></i> Nature</span>
+                            <span><i class="fas fa-camera"></i> Photo by Alex</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 2 -->
+            <div class="gallery-item" data-category="architecture">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Modern Building">
+                    <div class="image-overlay">
+                        <div class="image-caption">
+                            <h3>Modern Architecture</h3>
+                            <p>Contemporary building design with geometric patterns.</p>
+                        </div>
+                        <div class="image-icons">
+                            <span><i class="fas fa-building"></i> Architecture</span>
+                            <span><i class="fas fa-camera"></i> Photo by Maria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 3 -->
+            <div class="gallery-item" data-category="nature">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Beach Sunset">
+                    <div class="image-overlay">
+                        <div class="image-caption">
+                            <h3>Beach Sunset</h3>
+                            <p>Golden hour at a peaceful beach with calm waves.</p>
+                        </div>
+                        <div class="image-icons">
+                            <span><i class="fas fa-umbrella-beach"></i> Nature</span>
+                            <span><i class="fas fa-camera"></i> Photo by Sam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 4 -->
+            <div class="gallery-item" data-category="abstract">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Colorful Abstract">
+                    <div class="image-overlay">
+                        <div class="image-caption">
+                            <h3>Colorful Abstract</h3>
+                            <p>Vibrant colors blending in a fluid, artistic pattern.</p>
+                        </div>
+                        <div class="image-icons">
+                            <span><i class="fas fa-palette"></i> Abstract</span>
+                            <span><i class="fas fa-camera"></i> Photo by Caspar Camille Rubin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 5 -->
+            <div class="gallery-item" data-category="architecture">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Urban Cityscape">
+                    <div class="image-overlay">
+                        <div class="image-caption">
+                            <h3>Urban Cityscape</h3>
+                            <p>Skyline view of a modern metropolis at dusk.</p>
+                        </div>
+                        <div class="image-icons">
+                            <span><i class="fas fa-city"></i> Architecture</span>
+                            <span><i class="fas fa-camera"></i> Photo by Jordan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 6 -->
+            <div class="gallery-item" data-category="nature">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Forest Pathway">
+                    <div class="image-overlay">
+                        <div class="image-caption">
+                            <h3>Forest Pathway</h3>
+                            <p>Sunlight filtering through trees onto a winding forest path.</p>
+                        </div>
+                        <div class="image-icons">
+                            <span><i class="fas fa-tree"></i> Nature</span>
+                            <span><i class="fas fa-camera"></i> Photo by Casey</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 7 -->
+            <div class="gallery-item" data-category="abstract">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Geometric Patterns">
+                    <div class="image-overlay">
+                        <div class="image-caption">
+                            <h3>Geometric Patterns</h3>
+                            <p>Symmetrical shapes and lines creating visual harmony.</p>
+                        </div>
+                        <div class="image-icons">
+                            <span><i class="fas fa-shapes"></i> Abstract</span>
+                            <span><i class="fas fa-camera"></i> Photo by Zaksheuskaya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 8 -->
+            <div class="gallery-item" data-category="architecture">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Historic Bridge">
+                    <div class="image-overlay">
+                        <div class="image-caption">
+                            <h3>Historic Bridge</h3>
+                            <p>Stone arch bridge spanning a tranquil river.</p>
+                        </div>
+                        <div class="image-icons">
+                            <span><i class="fas fa-landmark"></i> Architecture</span>
+                            <span><i class="fas fa-camera"></i> Photo by Morgan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Gurjit Kaur. All rights reserved.</p>
+            <p>Designed and developed with ♡ using HTML, CSS & JavaScript</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
